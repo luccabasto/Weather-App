@@ -7,4 +7,3 @@
 ## 
 Estarei utilizando o <Sass> para desenvolver a estilização do projeto.  
 =======
-    
