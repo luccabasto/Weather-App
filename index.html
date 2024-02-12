@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles_src.css">
+    <link rel="stylesheet" href="css/styles_src.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--Scripts-->
     <script type="text/java-script" src="main.js"></script>
 </head>
 <body>
     <div class="app">
-        <div class="card-style" id="card">
-            <p>Hello Lucca Basto</p>
+        <div class="card" id="card">
 
+            <div class="search-box">
+                <input type="text" placeholder="Informe a localização" spellcheck="true"/>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="weather">
+                <img src="src/img/sol-limpo.png" alt="imagem representando tempo limpo" class="weather-icon">
+                <h1 class="temperatura">31° c</h1>
+                <h2 class="localizacao">Aclimação, São Paulo</h2>
+
+                <div class="detalhes">
+                    <div class="col">
+                        <img src="src/img/humidade.png" alt="imagem presentando humidade">
+                        <div>
+                            <p class="humidade">50%</p>
+                            <p>Humidade</p>
+                        </div>
+                    <div class="col">
+                        <img src="src/img/vento.png" alt="imagem presentando velocidade do vento">
+                        <div>
+                            <p class="vento">20,4km/hr</p>
+                            <p>Velocidade do vento</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 </body>

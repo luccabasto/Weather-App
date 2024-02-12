@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: #222;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b545b);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+.card-search {
+  width: 100%;
+  display: flex;
+  aling-itens: center;
+  justify-content: space-between;
+}
+.card input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 20px;
+  height: 60px;
+  width: 65%;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+.card button {
+  font-size: 18px;
+  border: 0;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: #ebfffc;
+  outline: 0;
+  cursor: pointer;
+}
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.temperatura {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.localizacao {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.detalhes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.detalhes .col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.detalhes .col img {
+  width: 40px;
+  margin-right: 10px;
+}
+.detalhes .col .vento, .detalhes .col .humidade {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+/*# sourceMappingURL=styles_src.css.map */
