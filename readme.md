@@ -5,5 +5,5 @@
     - [ ] - Desenvolvimento das functions. 
 
 ## 
-Estarei utilizando o <Sass> para desenvolver a estilização do projeto.  
+Estarei utilizando o Sass para desenvolver a estilização do projeto.  
 =======
