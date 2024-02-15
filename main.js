@@ -11,38 +11,46 @@ window.onload = function(){
     
     async function checkWeather(localizacao){
         const response = await fetch(apiUrl + localizacao + `&appid=${apiKey}`);
-        var data = await response.json();
-    
-        console.log(data);
-///Inserção dos dados da API 
+
+        if(response.status == 404){
+            document.querySelector(".error").style.display = "block";
+            document.querySelector(".weather").style.display = "none";
+        }
+        else{
+            var data = await response.json();
+
+            console.log(data);
+            ///Inserção dos dados da API 
         document.querySelector(".localizacao").innerHTML = data.name;
-    
+                
         document.querySelector(".temperatura").innerHTML = Math.round(data.main.temp)  + "°c";
         document.querySelector(".humidade").innerHTML = data.main.humidity + "%";
         document.querySelector(".vento").innerHTML = data.wind.speed + "km/h";
-
-//images representação
+            
+            //images representação
         if(data.weather[0].main == "Clouds"){
-            weatherIcons.src = "src/img/nublado.png";
-        }
+        weatherIcons.src = "src/img/nublado-strong.png";
+}
         else if(data.weather[0].main == "Clear"){
-            weatherIcons.src = "src/img/sol-limpo.png";
-        }
+            weatherIcons.src = "src/img/limpo.png";
+}
         else if(data.weather[0].main == "Drizzle"){
-            weatherIcons.src = "src/";
-        }
+            weatherIcons.src = "src/img/garoa.png";
+}
         else if(data.weather[0].main == "Rain"){
-            weatherIcons.src = "src/";
-        }
+            weatherIcons.src = "src/img/chuva.png";
+}
         else if(data.weather[0].main == "Mist"){
-            weatherIcons.src = "src/"
-        }
-        ///Night mode(?)
-    }
-    
+        weatherIcons.src = "src/img/neblinoso.png";
+}
+        document.querySelector(".weather").style.display = "block";
+        document.querySelector(".error").style.display = "none";
+
+        };
+    }; //checkWeather function
+
     pesquisaBtn.addEventListener("click", ()=>{
-        checkWeather(pesquisaBox.value)
-    })
+        checkWeather(pesquisaBox.value)})
 
 } //window.onload
 
