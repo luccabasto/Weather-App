@@ -6,7 +6,6 @@
     box-sizing: border-box
     font-family: "Nunito", sans-serif
 
-
 .card
     width: 90%
     max-width: 470px
@@ -16,7 +15,16 @@
     border-radius: 20px
     padding: 40px 35px
     text-align: center
+    position: relative
+
+    .positionCard
+    position: absolute
+    top: 60%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1
     
+
     .search 
         width: 100%
         display: flex
@@ -91,10 +99,21 @@
     display: none
 
 .smooth
-    position: absolute
-    width: 500
-    height: 500
+    width: 95vw
+    height: 100vh
+    
+    .blob
+        position: absolute    
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 95%
+        height: 100%
 
-.positionCard
-    position: variables.$positionCard
-    top: -500px
+    .-glow:nth-child(2)
+        filter: blur(50px)
+
+       
+            
+
+    
