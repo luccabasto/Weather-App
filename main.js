@@ -47,7 +47,7 @@ window.onload = function(){
         document.querySelector(".error").style.display = "none";
 
         };
-    }; //checkWeather function
+    }; //checkWeather
 
     pesquisaBtn.addEventListener("click", ()=>{
         checkWeather(pesquisaBox.value)})

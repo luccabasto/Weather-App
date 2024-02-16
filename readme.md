@@ -16,5 +16,7 @@ Estarei utilizando o Sass para desenvolver a estilização do projeto.
 
 * Sobre o styles Sass :
     - [⭐] Realizar uma estilização mais moderna através do Sass
+        - [⭐] Adioconado uma smooth animado como Hero-BG.
 
 <hr>
+<img src="src/img/finishApp.png" alt="Imagem refente ao projeto finalizado."/>
