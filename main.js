@@ -4,8 +4,8 @@ window.onload = function(){
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&lang=pt_br&q=";
 //functions - input / button / icon
     
-    const pesquisaBox = document.querySelector(".search-box input");
-    const pesquisaBtn = document.querySelector(".search-box button");
+    const pesquisaBox = document.querySelector(".search input");
+    const pesquisaBtn = document.querySelector(".search button");
     const weatherIcons = document.querySelector(".weather-icon");
 
     

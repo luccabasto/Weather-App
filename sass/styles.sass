@@ -1,11 +1,11 @@
+@use 'variables'
+
 * 
     margin: 0
     padding: 0
     box-sizing: border-box
     font-family: "Nunito", sans-serif
 
-body 
-    background: #222
 
 .card
     width: 90%
@@ -16,11 +16,11 @@ body
     border-radius: 20px
     padding: 40px 35px
     text-align: center
-
-    &-search 
+    
+    .search 
         width: 100%
         display: flex
-        aling-itens: center
+        aling-items: center
         justify-content: space-between
 
     input 
@@ -89,3 +89,12 @@ body
     margin-top: 10px
     font-size: 16px
     display: none
+
+.smooth
+    position: absolute
+    width: 500
+    height: 500
+
+.positionCard
+    position: variables.$positionCard
+    top: -500px
