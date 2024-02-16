@@ -5,16 +5,25 @@
   font-family: "Nunito", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .card {
   width: 90%;
   max-width: 470px;
-  background: linear-gradient(135deg, #00feba, #5b545b);
   color: #fff;
   margin: 100px auto 0;
   border-radius: 20px;
   padding: 40px 35px;
   text-align: center;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.29);
+  box-shadow: 0 5px 30px rgba(117, 172, 175, 0.7);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.64);
   position: absolute;
   top: 60%;
   left: 50%;

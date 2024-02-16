@@ -15,6 +15,6 @@
 Estarei utilizando o Sass para desenvolver a estilização do projeto.
 
 * Sobre o styles Sass :
-    - [ ] Realizar uma estilização mais moderna através do Sass
+    - [⭐] Realizar uma estilização mais moderna através do Sass
 
 <hr>
